@@ -5,8 +5,7 @@
 [//]: # (Image References)
 
 [image1]: ./image/n_classes_distribution.png "Visualization"
-[image2]: ./examples/image.png "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[image2]: ./image/image.png "Grayscaling"
 [image4]: ./image/image1.jpeg "Traffic Sign 1"
 [image5]: ./image/image2.jpeg "Traffic Sign 2"
 [image6]: ./image/image3.jpeg "Traffic Sign 3"
@@ -137,7 +136,7 @@ The LeNet architecture
 The LeNet architecture is a CNN and it is relevant to traffic sign application because it is an image classification problem
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-The final accurancy of the test set 
+The final accurancy of the test set is 86%. In order to estimate how well the model has been trained I look to the validation accurancy and in the 15 epochs is 95%. The training accurancy is comparable with the validation accurancy and at is 97%
  
  
 
@@ -172,19 +171,4 @@ Here are the results of the prediction:
 The model was able to correctly guess 2 of the 5 traffic signs, which gives an accuracy of 40%. 
 The last three images are a bit distorted during the automatic process of resizing and cropping.
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
