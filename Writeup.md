@@ -99,9 +99,9 @@ The value of hiperparameter learning rate that I use is 0.01.
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
 My final model results were:
-* training set accuracy of 0.974
-* validation set accuracy of 0.952
-* test set accuracy of 0.867
+* training set accuracy of 0.979
+* validation set accuracy of 0.96
+* test set accuracy of 0.892
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -136,7 +136,7 @@ The LeNet architecture
 The LeNet architecture is a CNN and it is relevant to traffic sign application because it is an image classification problem
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-The final accurancy of the test set is 86%. In order to estimate how well the model has been trained I look to the validation accurancy and in the 15 epochs is 95%. The training accurancy is comparable with the validation accurancy and at is 97%
+The final accurancy of the test set is 89%. In order to estimate how well the model has been trained I look to the validation accurancy and in the 15 epochs is 95%. The training accurancy is comparable with the validation accurancy and at is 97%
  
  
 
@@ -149,7 +149,7 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The last three images might be difficult to classify because they are distorced during the automatic process of resizing and cropping. The signs are not in the same central location or resolution as the training samples. I suggest to augment the training set aumenting the data permorming trasformation as rotations and scaling.
+The images might be difficult to classify because they are distorced during the automatic process of resizing and cropping. The signs are not in the same central location or resolution as the training samples. I suggest to augment the training set aumenting the data permorming trasformation as rotations and scaling.
 
 ![alt text][image9]
 
@@ -161,14 +161,14 @@ Here are the results of the prediction:
 
 | Image			                        |     Prediction	        					| 
 |:-------------------------------------:|:---------------------------------------------:| 
-| General caution    		            | General caution   						    | 
+| General caution    		            | Right-of-way at the next intersection  						    | 
 | Right-of-way at the next intersection | Right-of-way at the next intersectio			|
-| Speed limit (50km/h)				    | Speed limit (80km/h)      				    |
+| Speed limit (50km/h)				    | Speed limit (30km/h)      				    |
 | Speed limit (30km/h)	      	        | Dangerous curve to the right 					|
-| Stop		                            | Ahead only                  					|
+| Stop		                            | Turn right ahead                 					|
 
 
-The model was able to correctly guess 2 of the 5 traffic signs, which gives an accuracy of 40%. 
+The model was able to correctly guess 1 of the 5 traffic signs, which gives an accuracy of 20%. 
 The last three images are a bit distorted during the automatic process of resizing and cropping.
 
 
