@@ -161,14 +161,40 @@ Here are the results of the prediction:
 
 | Image			                        |     Prediction	        					| 
 |:-------------------------------------:|:---------------------------------------------:| 
-| General caution    		            | Right-of-way at the next intersection  						    | 
-| Right-of-way at the next intersection | Right-of-way at the next intersectio			|
+| General caution    		            | Bicycles crossing  	                        | 
+| Right-of-way at the next intersection | Right-of-way at the next intersection			|
 | Speed limit (50km/h)				    | Speed limit (30km/h)      				    |
-| Speed limit (30km/h)	      	        | Dangerous curve to the right 					|
-| Stop		                            | Turn right ahead                 					|
+| Speed limit (30km/h)	      	        | Road work				                        |
+| Stop		                            | Stop                	            	        |
 
 
 The model was able to correctly guess 1 of the 5 traffic signs, which gives an accuracy of 20%. 
 The last three images are a bit distorted during the automatic process of resizing and cropping.
+
+#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+
+The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+
+The accuracy on the captured images is 0.4 while it was 0.86 on the testing set thus It seems the model is overfitting.
+
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.99         			| Bicycles crossing  							| 
+| 1     				| Right-of-way at the next intersection 		|
+| 0.4					| Speed limit (30km/h)							|
+| 0.9	      			| Road work             			 			|
+| 1 				    | Stop              							|
+
+For the first image, the model is sure that this is a Bicycles crossing sign (probability of 1), but the actual image is General caution.
+
+For the second image the model is sure that is a Right-of-way at the next intersection sign and it is corret.
+
+For the third image the model is not sure that is a Speed limit (30km/h) sign (probability 0.4), the actual sign is
+Speed limit (50km/h) not present in the top 5.
+
+For the fourth image, the model is sure that this is a Bicycles crossing sign (probability of 1), but the actual image is General caution.
+
+For the fifth image the model is sure that is a Stop sign and it is corret.
 
 
